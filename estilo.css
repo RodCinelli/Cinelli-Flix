@@ -1,0 +1,112 @@
+.navbar-brand {
+    color: red !important;
+    /* Cor vermelha */
+    font-size: 24px;
+    /* Tamanho da fonte aumentado */
+}
+
+.navbar-brand:hover,
+.navbar-brand:focus,
+.navbar-brand:visited {
+    color: red !important;
+}
+
+.nav-link.active {
+    color: yellow !important;
+    /* Cor para o item selecionado */
+    background-color: rgba(255, 255, 255, 0.2) !important;
+    /* Fundo semi-transparente */
+    border-radius: 5px;
+    /* Bordas arredondadas para o quadrado */
+}
+
+.navbar-nav .nav-link {
+    padding: 10px 15px;
+}
+
+/* Estiliza os itens do dropdown */
+.dropdown-menu {
+    background-color: #343a40; /* Mesma cor de fundo da navbar - ajuste conforme necessário */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Cor inicial dos itens do dropdown */
+.dropdown-item {
+    color: #ccc; /* Define a cor inicial do texto dos itens do dropdown */
+}
+
+/* Estiliza os itens do dropdown ao passar o mouse */
+.dropdown-item:hover, .dropdown-item:focus {
+    background-color: rgba(255, 255, 255, 0.2); /* Cor de fundo para item ativo/selecionado */
+    color: yellow; /* Cor do texto ao passar o mouse ou ao item estar focado */
+}
+
+/* Estiliza o item do dropdown que está ativo */
+.dropdown-item.active, .dropdown-item:active {
+    background-color: rgba(255, 255, 255, 0.2); /* Cor de fundo para item ativo/selecionado */
+    color: yellow; /* Cor do texto para o item ativo */
+}
+
+/* Estilo customizado para desktop (acima de 1023px) */
+@media (min-width: 1023px) {
+    .dropdown-menu {
+        right: 0; /* Alinha o lado direito do menu dropdown com o lado direito do botão de dropdown */
+        left: auto; /* Anula qualquer estilo padrão aplicado ao lado esquerdo */
+        transform: translateX(-25px); /* Move o dropdown 10 pixels para a esquerda - ajuste conforme necessário */
+    }
+}
+
+/* Estilo customizado para tablets (de 641px até 1023px) */
+@media (min-width: 641px) and (max-width: 1023px) {
+
+    .navbar-brand.ms-5,
+    .me-5 {
+        margin-left: 0 !important;
+        /* Ajuste a margem conforme necessário para tablets */
+        margin-right: 0 !important;
+        /* Ajuste a margem conforme necessário para tablets */
+    }
+
+    .navbar-collapse {
+        text-align: center;
+    }
+
+    .navbar-nav {
+        /* Centraliza os itens do menu na navbar quando estiverem expandidos */
+        display: flex; /* Utiliza flexbox ao invés de float */
+        flex-direction: column; /* Alinha os itens verticalmente */
+        width: 100%; /* Ajusta a largura */
+        align-items: center; /* Alinha itens flexíveis ao centro no eixo cruzado */
+    }
+
+    .navbar-nav .nav-link {
+        padding: 8px 12px; /* Preenchimento menor para dispositivos móveis */
+    }
+}
+
+/* Estilo customizado para mobile (até 640px) */
+@media (max-width: 640px) {
+
+    .navbar-brand.ms-5,
+    .me-5 {
+        margin-left: 0 !important; /* Remove a margem esquerda para dispositivos móveis */
+        margin-right: 0 !important; /* Remove a margem direita para dispositivos móveis */
+    }
+
+    .navbar-collapse {
+        text-align: center;
+    }
+
+    .navbar-nav {
+        /* Centraliza os itens do menu na navbar quando estiverem expandidos */
+        display: flex; /* Utiliza flexbox ao invés de float */
+        flex-direction: column; /* Alinha os itens verticalmente */
+        width: 100%; /* Ajusta a largura */
+        align-items: center; /* Alinha itens flexíveis ao centro no eixo cruzado */
+    }
+
+    .navbar-nav .nav-link {
+        padding: 8px 12px; /* Preenchimento menor para dispositivos móveis */
+    }
+}
+
