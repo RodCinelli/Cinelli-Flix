@@ -10,14 +10,19 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid me-5">
-            <a class="navbar-brand ms-5" href="#">Cinelli Flix</a>
+            <!-- Ícone de sino para Tablet e Mobile (à esquerda do hambúrguer) -->
+            <a id="btn-checar-emails-mobile" class="nav-link d-lg-none position-absolute" href="#" aria-label="Notificações">
+                <img src="images/notificacoes.png" alt="Notificações" style="height: 20px;">
+            </a>
+            <a class="navbar-brand ms-5" href="#inicio">Cinelli Flix</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav ms-auto"> <!-- Alterado para ms-auto para alinhar à direita -->
+                <ul class="navbar-nav ms-auto">
+                    <!-- Itens da Navbar -->
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Início</a>
+                        <a class="nav-link active" aria-current="page" href="#inicio">Início</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -35,28 +40,69 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">Sobre</a>
                     </li>
+                    <!-- Ícone de sino para Desktop -->
+                    <li class="nav-item d-none d-lg-block">
+                        <a id="btn-checar-emails-desktop" class="nav-link" href="#" aria-label="Notificações">
+                            <img src="images/notificacoes.png" alt="Notificações" style="height: 20px;">
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <div id="cinelliFlixCarousel" class="carousel slide" data-bs-ride="carousel">
+    <section id="inicio">
+    <div id="cinelliFlixCarousel" class="carousel carousel-fade slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#cinelliFlixCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#cinelliFlixCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#cinelliFlixCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#cinelliFlixCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#cinelliFlixCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#cinelliFlixCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+            <button type="button" data-bs-target="#cinelliFlixCarousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
         </div>
         <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="seu-caminho-para-imagem1.jpg" class="d-block w-100" alt="...">
+            <div data-bs-interval="3000" class="carousel-item active">
+                <img src="./images/interestelar.png" class="d-block w-100" alt="Interestelar">
+                <div class="carousel-caption">
+                    <h2 class="carousel-title">Interestelar</h2>
+                </div>
             </div>
-            <div class="carousel-item">
-                <img src="seu-caminho-para-imagem2.jpg" class="d-block w-100" alt="...">
+            <div data-bs-interval="3000" class="carousel-item">
+                <img src="./images/bastardos.png" class="d-block w-100" alt="Bastardos Inglórios">
+                <div class="carousel-caption">
+                    <h2 class="carousel-title">Bastardos Inglórios</h2>
+                </div>
             </div>
-            <div class="carousel-item">
-                <img src="seu-caminho-para-imagem3.jpg" class="d-block w-100" alt="...">
+            <div data-bs-interval="3000" class="carousel-item">
+                <img src="./images/halloween.png" class="d-block w-100" alt="Halloween">
+                <div class="carousel-caption">
+                    <h2 class="carousel-title">Halloween</h2>
+                </div>
             </div>
-            <div class="carousel-item">
-                <img src="seu-caminho-para-imagem4.jpg" class="d-block w-100" alt="...">
+            <div data-bs-interval="3000" class="carousel-item">
+                <img src="./images/oppenheimer.png" class="d-block w-100" alt="Oppenheimer">
+                <div class="carousel-caption">
+                    <h2 class="carousel-title">Oppenheimer</h2>
+                </div>
+            </div>
+            <div data-bs-interval="3000" class="carousel-item">
+                <img src="./images/coracoesdeferro.png" class="d-block w-100" alt="Corações de Ferro">
+                <div class="carousel-caption">
+                    <h2 class="carousel-title">Corações de Ferro</h2>
+                </div>
+            </div>
+            <div data-bs-interval="3000" class="carousel-item">
+                <img src="./images/fredvsjason.png" class="d-block w-100" alt="Fred vs Jason">
+                <div class="carousel-caption">
+                    <h2 class="carousel-title">Fred vs Jason</h2>
+                </div>
+            </div>
+            <div data-bs-interval="3000" class="carousel-item">
+                <img src="./images/bladerunner.png" class="d-block w-100" alt="Blade Runner 2049">
+                <div class="carousel-caption">
+                    <h2 class="carousel-title">Blade Runner 2049</h2>
+                </div>
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#cinelliFlixCarousel" data-bs-slide="prev">
@@ -67,6 +113,24 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Próximo</span>
         </button>
+    </div>
+    </section>
+    <!-- Toast -->
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div class="toast" id="mensagens-alerta">
+            <div class="toast-header">
+                <strong class="me-auto">Importante</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                Você possui 5 recomendações não visualizadas.
+                <div class="mt-2 pt-2 border-top d-flex justify-content-center">
+                    <button data-bs-dismiss="toast" class="btn btn-danger" type="button">
+                        Descartar
+                    </button>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="./lib/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>

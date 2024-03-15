@@ -1,7 +1,7 @@
 .navbar-brand {
     color: red !important;
     /* Cor vermelha */
-    font-size: 24px;
+    font-size: 28px;
     /* Tamanho da fonte aumentado */
 }
 
@@ -47,12 +47,29 @@
     color: yellow; /* Cor do texto para o item ativo */
 }
 
+#cinelliFlixCarousel .carousel-item img {
+    max-height: 893px; /* Ajuste a altura máxima conforme necessário */
+    object-fit: cover; /* Mantém a proporção da imagem enquanto cobre o espaço disponível */
+}
+
+.carousel-title {
+    color: #ccc;
+}
+
 /* Estilo customizado para desktop (acima de 1023px) */
 @media (min-width: 1023px) {
     .dropdown-menu {
         right: 0; /* Alinha o lado direito do menu dropdown com o lado direito do botão de dropdown */
         left: auto; /* Anula qualquer estilo padrão aplicado ao lado esquerdo */
         transform: translateX(-25px); /* Move o dropdown 10 pixels para a esquerda - ajuste conforme necessário */
+    }
+}
+
+/* Estilo customizado para mobile (até 640px) e tablet (até 1023px) */
+@media (max-width: 1023px) {
+    #btn-checar-emails-mobile {
+        /* Ajustes para posicionar corretamente o ícone ao lado do menu hambúrguer */
+        left: calc(100% - 105px); /* Ajuste baseado na largura do seu ícone e do botão hambúrguer */
     }
 }
 
@@ -82,6 +99,10 @@
     .navbar-nav .nav-link {
         padding: 8px 12px; /* Preenchimento menor para dispositivos móveis */
     }
+
+    #btn-checar-emails-mobile {
+        top: 20px; /* Mantém alinhado verticalmente */
+    }
 }
 
 /* Estilo customizado para mobile (até 640px) */
@@ -107,6 +128,14 @@
 
     .navbar-nav .nav-link {
         padding: 8px 12px; /* Preenchimento menor para dispositivos móveis */
+    }
+
+    #btn-checar-emails-mobile {
+        top: 20px; /* Mantém alinhado verticalmente */
+    }
+
+    .carousel-title {
+        font-size: 1rem; /* Tamanho menor para dispositivos móveis */
     }
 }
 
