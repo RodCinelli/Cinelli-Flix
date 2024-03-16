@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,132 +8,341 @@
     <link rel="stylesheet" href="estilo.css">
     <title>Cinelli Flix</title>
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid me-5">
-            <!-- Ícone de sino para Tablet e Mobile (à esquerda do hambúrguer) -->
-            <a id="btn-checar-emails-mobile" class="nav-link d-lg-none position-absolute" href="#" aria-label="Notificações">
-                <img src="images/notificacoes.png" alt="Notificações" style="height: 20px;">
-            </a>
-            <a class="navbar-brand ms-5" href="#inicio">Cinelli Flix</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid me-5">
+                <!-- Ícone de sino para Tablet e Mobile (à esquerda do hambúrguer) -->
+                <a id="btn-checar-emails-mobile" class="nav-link d-lg-none position-absolute" href="#"
+                    aria-label="Notificações">
+                    <img src="images/notificacoes.png" alt="Notificações" style="height: 20px;">
+                </a>
+                <a class="navbar-brand ms-5" href="#inicio">Cinelli Flix</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto">
+                        <!-- Itens da Navbar -->
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#inicio">Início</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Categorias
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#sci-fi">Sci-Fi</a></li>
+                                <li><a class="dropdown-item" href="#acao">Ação</a></li>
+                                <li><a class="dropdown-item" href="#terror">Terror</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Perguntas Frequentes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sobre</a>
+                        </li>
+                        <!-- Ícone de sino para Desktop -->
+                        <li class="nav-item d-none d-lg-block">
+                            <a id="btn-checar-emails-desktop" class="nav-link" href="#" aria-label="Notificações">
+                                <img src="images/notificacoes.png" alt="Notificações" style="height: 20px;">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div id="cinelliFlixCarousel" class="carousel carousel-fade slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#cinelliFlixCarousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#cinelliFlixCarousel" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#cinelliFlixCarousel" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#cinelliFlixCarousel" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#cinelliFlixCarousel" data-bs-slide-to="4"
+                    aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#cinelliFlixCarousel" data-bs-slide-to="5"
+                    aria-label="Slide 6"></button>
+                <button type="button" data-bs-target="#cinelliFlixCarousel" data-bs-slide-to="6"
+                    aria-label="Slide 7"></button>
+                <button type="button" data-bs-target="#cinelliFlixCarousel" data-bs-slide-to="7"
+                    aria-label="Slide 8"></button>
+                <button type="button" data-bs-target="#cinelliFlixCarousel" data-bs-slide-to="8"
+                    aria-label="Slide 9"></button>
+            </div>
+            <div class="carousel-inner">
+                <div data-bs-interval="3000" class="carousel-item active">
+                    <img src="./images/interestelar.png" class="d-block w-100" alt="Interestelar">
+                    <div class="carousel-caption">
+                        <h2 class="carousel-title">Interestelar</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img src="./images/bastardos.png" class="d-block w-100" alt="Bastardos Inglórios">
+                    <div class="carousel-caption">
+                        <h2 class="carousel-title">Bastardos Inglórios</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img src="./images/halloween.png" class="d-block w-100" alt="Halloween">
+                    <div class="carousel-caption">
+                        <h2 class="carousel-title">Halloween</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img src="./images/oppenheimer.png" class="d-block w-100" alt="Oppenheimer">
+                    <div class="carousel-caption">
+                        <h2 class="carousel-title">Oppenheimer</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img src="./images/coracoesdeferro.png" class="d-block w-100" alt="Corações de Ferro">
+                    <div class="carousel-caption">
+                        <h2 class="carousel-title">Corações de Ferro</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img src="./images/fredvsjason.png" class="d-block w-100" alt="Fred vs Jason">
+                    <div class="carousel-caption">
+                        <h2 class="carousel-title">Fred vs Jason</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img src="./images/bladerunner.png" class="d-block w-100" alt="Blade Runner 2049">
+                    <div class="carousel-caption">
+                        <h2 class="carousel-title">Blade Runner 2049</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img src="./images/topgun.png" class="d-block w-100" alt="Top Gun Maverick">
+                    <div class="carousel-caption">
+                        <h2 class="carousel-title">Top Gun Maverick</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img src="./images/jogosmortais.png" class="d-block w-100" alt="Jogos Mortais">
+                    <div class="carousel-caption">
+                        <h2 class="carousel-title">Jogos Mortais</h2>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#cinelliFlixCarousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav ms-auto">
-                    <!-- Itens da Navbar -->
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#inicio">Início</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Categorias
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">Ação</a></li>
-                            <li><a class="dropdown-item" href="#">Sci-fi</a></li>
-                            <li><a class="dropdown-item" href="#">Terror</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Perguntas Frequentes</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Sobre</a>
-                    </li>
-                    <!-- Ícone de sino para Desktop -->
-                    <li class="nav-item d-none d-lg-block">
-                        <a id="btn-checar-emails-desktop" class="nav-link" href="#" aria-label="Notificações">
-                            <img src="images/notificacoes.png" alt="Notificações" style="height: 20px;">
-                        </a>
-                    </li>
-                </ul>
+            <button class="carousel-control-next" type="button" data-bs-target="#cinelliFlixCarousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
+        </div>
+        <!-- Seção Categorias -->
+        <section id="categorias" class="mt-5 pt-5 text-center">
+            <div class="container">
+                <h1 class="categoria-title">Categorias</h1>
+                <!-- Subseção Sci-Fi -->
+                <section id="sci-fi" class="mt-5">
+                    <div class="container">
+                        <h2 class="subcategoria-title mb-5">Sci-Fi</h2>
+                        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4"> <!-- Ajuste aqui -->
+                            <!-- Filme 1 -->
+                            <div class="col">
+                                <div class="card h-100 bg-dark">
+                                    <img src="./images/interestelar.png" class="card-img-top" alt="Interestelar">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Interestelar</h5>
+                                        <p class="card-text">Em "Interestelar", a humanidade enfrenta a extinção na
+                                            Terra
+                                            devido a desastres climáticos. Um grupo de exploradores espaciais utiliza um
+                                            misterioso buraco de minhoca para superar as limitações das viagens
+                                            espaciais
+                                            humanas e embarcar em uma missão audaciosa para encontrar um novo lar para a
+                                            humanidade.</p>
+                                        <button type="button" class="btn btn-warning">Assistir</button>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted">Última atualização 3 mins atrás</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Filme 2 -->
+                            <div class="col">
+                                <div class="card h-100 bg-dark">
+                                    <img src="./images/oppenheimer.png" class="card-img-top" alt="Oppenheimer">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Oppenheimer</h5>
+                                        <p class="card-text">"Oppenheimer" mergulha na vida do cientista J. Robert
+                                            Oppenheimer, o "pai da bomba atômica", explorando os dilemas morais e
+                                            sociais, os
+                                            avanços
+                                            científicos e os eventos históricos que culminaram na criação e no uso da
+                                            arma
+                                            nuclear durante a Segunda Guerra Mundial, mudando a história completamente.
+                                        </p>
+                                        <button type="button" class="btn btn-warning">Assistir</button>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted">Última atualização 5 mins atrás</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Filme 3 -->
+                            <div class="col">
+                                <div class="card h-100 bg-dark">
+                                    <img src="./images/bladerunner.png" class="card-img-top" alt="Blade Runner 2049">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Blade Runner 2049</h5>
+                                        <p class="card-text">"Blade Runner 2049" se passa décadas após o filme original,
+                                            seguindo o novo blade runner, o oficial K, em sua jornada para desvendar um
+                                            segredo há muito enterrado que tem o potencial de mergulhar o que resta da
+                                            sociedade no caos. A busca de K o leva a Rick Deckard, um ex-blade runner
+                                            que
+                                            está desaparecido há 30 anos.</p>
+                                        <button type="button" class="btn btn-warning">Assistir</button>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted">Última atualização 10 mins atrás</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Subseção Ação -->
+                <section id="acao" class="mt-5">
+                    <div class="container">
+                        <h2 class="subcategoria-title mb-5">Ação</h2>
+                        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4"> <!-- Ajuste aqui -->
+                            <!-- Filme 1 -->
+                            <div class="col">
+                                <div class="card h-100 bg-dark">
+                                    <img src="./images/bastardos.png" class="card-img-top" alt="Bastardos Inglórios">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Bastardos Inglórios</h5>
+                                        <p class="card-text">"Bastardos Inglórios" é uma obra audaciosa do diretor Quentin Tarantino, misturando ficção histórica e ação em uma narrativa vibrante durante a Segunda Guerra Mundial. O filme segue a trajetória de um grupo de soldados judeus americanos conhecidos como "The Basterds", liderados pelo tenente Aldo Raine.</p>
+                                        <button type="button" class="btn btn-warning">Assistir</button>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted">Última atualização 3 mins atrás</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Filme 2 -->
+                            <div class="col">
+                                <div class="card h-100 bg-dark">
+                                    <img src="./images/coracoesdeferro.png" class="card-img-top" alt="Corações de Ferro">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Corações de Ferro</h5>
+                                        <p class="card-text">"Corações de Ferro" é um intenso drama de guerra ambientado durante os últimos meses da Segunda Guerra Mundial na Europa. O filme segue a jornada do sargento Don "Wardaddy" Collier, interpretado por Brad Pitt, e sua tripulação, enquanto eles comandam um tanque Sherman em uma missão mortal atrás das linhas inimigas alemãs.</p>
+                                        <button type="button" class="btn btn-warning">Assistir</button>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted">Última atualização 5 mins atrás</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Filme 3 -->
+                            <div class="col">
+                                <div class="card h-100 bg-dark">
+                                    <img src="./images/topgun.png" class="card-img-top" alt="Top Gun Maverick">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Top Gun Maverick</h5>
+                                        <p class="card-text">"Top Gun Maverick" é a aguardada sequência do icônico filme de 1986, trazendo de volta Tom Cruise no papel do carismático piloto Pete "Maverick" Mitchell. Maverick encontra-se como um dos pilotos de teste mais respeitados da Marinha, quando ele é chamado para treinar um grupo de graduados da Top Gun.</p>
+                                        <button type="button" class="btn btn-warning">Assistir</button>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted">Última atualização 10 mins atrás</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Subseção Terror -->
+                <section id="terror" class="mt-5">
+                    <div class="container">
+                        <h2 class="subcategoria-title mb-5">Terror</h2>
+                        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4"> <!-- Ajuste aqui -->
+                            <!-- Filme 1 -->
+                            <div class="col">
+                                <div class="card h-100 bg-dark">
+                                    <img src="./images/halloween.png" class="card-img-top" alt="Halloween">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Halloween</h5>
+                                        <p class="card-text">"Halloween", o filme que definiu o gênero slasher, segue a aterrorizante história de Michael Myers, que, após assassinar sua irmã na noite de Halloween quando tinha apenas seis anos de idade, é internado em uma instituição psiquiátrica. Quinze anos depois, Myers escapa e retorna a Haddonfield, Illinois, com um único objetivo: matar.</p>
+                                        <button type="button" class="btn btn-warning">Assistir</button>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted">Última atualização 3 mins atrás</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Filme 2 -->
+                            <div class="col">
+                                <div class="card h-100 bg-dark">
+                                    <img src="./images/fredvsjason.png" class="card-img-top" alt="Fred vs Jason">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Fred vs Jason</h5>
+                                        <p class="card-text">"Fred vs. Jason" é o confronto épico entre dois dos mais icônicos vilões do cinema de terror: Freddy Krueger, o assassino dos sonhos de "A Nightmare on Elm Street", e Jason Voorhees, o incansável assassino de "Friday the 13th". Após anos de ser esquecido, Freddy Krueger trama seu retorno manipulando Jason Voorhees para semear o terror e o medo.</p>
+                                        <button type="button" class="btn btn-warning">Assistir</button>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted">Última atualização 5 mins atrás</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Filme 3 -->
+                            <div class="col">
+                                <div class="card h-100 bg-dark">
+                                    <img src="./images/jogosmortais.png" class="card-img-top" alt="Jogos Mortais">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Jogos Mortais</h5>
+                                        <p class="card-text">"Jogos Mortais" é um thriller psicológico que se aprofunda na mente de um assassino conhecido como Jigsaw, que coloca suas vítimas em testes e armadilhas mortais como uma forma distorcida de justiça moral. "Jogos Mortais" é um conto de terror arrepiante sobre sobrevivência, instinto humano e a capacidade de fazer escolhas terríveis sob pressão.</p>
+                                        <button type="button" class="btn btn-warning">Assistir</button>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted">Última atualização 10 mins atrás</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+        </section>
+        <!-- Toast -->
+        <div class="toast-container position-fixed bottom-0 end-0 p-3">
+            <div class="toast" id="mensagens-alerta">
+                <div class="toast-header">
+                    <strong class="me-auto">Importante</strong>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body">
+                    Você possui 5 recomendações não visualizadas.
+                    <div class="mt-2 pt-2 border-top d-flex justify-content-center">
+                        <button data-bs-dismiss="toast" class="btn btn-danger" type="button">
+                            Descartar
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
-    </nav>
-    <section id="inicio">
-    <div id="cinelliFlixCarousel" class="carousel carousel-fade slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#cinelliFlixCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#cinelliFlixCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#cinelliFlixCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#cinelliFlixCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
-            <button type="button" data-bs-target="#cinelliFlixCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
-            <button type="button" data-bs-target="#cinelliFlixCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
-            <button type="button" data-bs-target="#cinelliFlixCarousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
-        </div>
-        <div class="carousel-inner">
-            <div data-bs-interval="3000" class="carousel-item active">
-                <img src="./images/interestelar.png" class="d-block w-100" alt="Interestelar">
-                <div class="carousel-caption">
-                    <h2 class="carousel-title">Interestelar</h2>
-                </div>
-            </div>
-            <div data-bs-interval="3000" class="carousel-item">
-                <img src="./images/bastardos.png" class="d-block w-100" alt="Bastardos Inglórios">
-                <div class="carousel-caption">
-                    <h2 class="carousel-title">Bastardos Inglórios</h2>
-                </div>
-            </div>
-            <div data-bs-interval="3000" class="carousel-item">
-                <img src="./images/halloween.png" class="d-block w-100" alt="Halloween">
-                <div class="carousel-caption">
-                    <h2 class="carousel-title">Halloween</h2>
-                </div>
-            </div>
-            <div data-bs-interval="3000" class="carousel-item">
-                <img src="./images/oppenheimer.png" class="d-block w-100" alt="Oppenheimer">
-                <div class="carousel-caption">
-                    <h2 class="carousel-title">Oppenheimer</h2>
-                </div>
-            </div>
-            <div data-bs-interval="3000" class="carousel-item">
-                <img src="./images/coracoesdeferro.png" class="d-block w-100" alt="Corações de Ferro">
-                <div class="carousel-caption">
-                    <h2 class="carousel-title">Corações de Ferro</h2>
-                </div>
-            </div>
-            <div data-bs-interval="3000" class="carousel-item">
-                <img src="./images/fredvsjason.png" class="d-block w-100" alt="Fred vs Jason">
-                <div class="carousel-caption">
-                    <h2 class="carousel-title">Fred vs Jason</h2>
-                </div>
-            </div>
-            <div data-bs-interval="3000" class="carousel-item">
-                <img src="./images/bladerunner.png" class="d-block w-100" alt="Blade Runner 2049">
-                <div class="carousel-caption">
-                    <h2 class="carousel-title">Blade Runner 2049</h2>
-                </div>
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#cinelliFlixCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Anterior</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#cinelliFlixCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Próximo</span>
-        </button>
-    </div>
-    </section>
-    <!-- Toast -->
-    <div class="toast-container position-fixed bottom-0 end-0 p-3">
-        <div class="toast" id="mensagens-alerta">
-            <div class="toast-header">
-                <strong class="me-auto">Importante</strong>
-                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-            </div>
-            <div class="toast-body">
-                Você possui 5 recomendações não visualizadas.
-                <div class="mt-2 pt-2 border-top d-flex justify-content-center">
-                    <button data-bs-dismiss="toast" class="btn btn-danger" type="button">
-                        Descartar
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <script src="./lib/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
+        <script src="./lib/bootstrap.bundle.min.js"></script>
+        <script src="script.js"></script>
+    </main>
+    <footer class="bg-dark text-center mt-5 py-2">
+        <p>&copy; 2024 <a href="https://github.com/RodCinelli" class="github-link" style="text-decoration: underline;">Rodrigo Cinelli</a>. Todos os direitos reservados.</p>
+    </footer>           
 </body>
+
 </html>

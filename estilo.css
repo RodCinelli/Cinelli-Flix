@@ -1,3 +1,24 @@
+body {
+    background-color: #343a40; /* Cor padrão do bg-dark do Bootstrap */
+}
+
+.categoria-title, .subcategoria-title {
+    color: #ccc;
+    text-align: center;
+}
+
+.card-title, .card-text {
+    color: #ccc;
+}
+
+.card-footer .text-muted {
+    color: #ccc !important;
+}
+
+.categoria-title {
+    text-decoration: underline;
+}
+
 .navbar-brand {
     color: red !important;
     /* Cor vermelha */
@@ -54,6 +75,19 @@
 
 .carousel-title {
     color: #ccc;
+}
+
+footer p {
+    margin-top: 20px;
+    color: #ccc; /* Define a cor do texto para #ccc */
+}
+
+footer p, .github-link {
+    color: #ccc; /* Define a cor do texto e do link para #ccc */
+}
+
+.github-link:hover {
+    color: #fff; /* Cor do link ao passar o mouse, opcional */
 }
 
 /* Estilo customizado para desktop (acima de 1023px) */
