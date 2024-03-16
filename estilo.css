@@ -112,7 +112,7 @@ body {
 }
 
 .carousel-title {
-    color: #ccc;
+    color: #ccc; /* Define a cor do texto para #ccc */
 }
 
 footer p {
