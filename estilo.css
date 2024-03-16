@@ -1,6 +1,13 @@
 body {
     background-color: #343a40; /* Cor padrão do bg-dark do Bootstrap */
+    padding-top: 68px; /* Ajuste este valor conforme necessário */
 }
+
+.anchor-div {
+    margin-top: -80px; /* Altura da navbar */
+    padding-top: 80px; /* Espaço para garantir visibilidade */
+}
+
 
 .categoria-title, .subcategoria-title {
     color: #ccc;
@@ -18,6 +25,37 @@ body {
 .categoria-title {
     text-decoration: underline;
 }
+
+.categoria-title, .accordion-body, .accordion-button, .accordion-header button:focus {
+    color: #ccc !important;
+}
+
+.accordion-button {
+    border-color: #343a40 !important; /* Cor das bordas do botão */
+    background-color: #343a40 !important; /* Cor de fundo do botão */
+}
+
+.accordion-button:not(.collapsed) {
+    color: #ccc;
+    background-color: #343a40 !important;
+    box-shadow: none !important; /* Remove qualquer sombra ou efeito de foco */
+}
+
+.accordion-button.collapsed {
+    border-color: #343a40 !important;
+    background-color: #343a40 !important; /* Cor de fundo quando colapsado */
+}
+
+/* Remove o contorno azul ao focar nos botões (quando clicados) */
+.accordion-button:focus {
+    box-shadow: none !important;
+}
+
+/* Cor da borda do item do acordeão */
+.accordion-item {
+    border-color: #343a40 !important;
+}
+
 
 .navbar-brand {
     color: red !important;

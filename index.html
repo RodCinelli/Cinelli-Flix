@@ -9,9 +9,9 @@
     <title>Cinelli Flix</title>
 </head>
 
-<body>
+<body id="inicio">
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <div class="container-fluid me-5">
                 <!-- Ícone de sino para Tablet e Mobile (à esquerda do hambúrguer) -->
                 <a id="btn-checar-emails-mobile" class="nav-link d-lg-none position-absolute" href="#"
@@ -42,10 +42,7 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Perguntas Frequentes</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Sobre</a>
+                            <a class="nav-link" href="#perguntas">Perguntas Frequentes</a>
                         </li>
                         <!-- Ícone de sino para Desktop -->
                         <li class="nav-item d-none d-lg-block">
@@ -148,12 +145,13 @@
             </button>
         </div>
         <!-- Seção Categorias -->
-        <section id="categorias" class="mt-5 pt-5 text-center">
+        <section id="categorias" class="mt-4 mt-lg-5 pt-4 pt-lg-5 text-center">
             <div class="container">
                 <h1 class="categoria-title">Categorias</h1>
                 <!-- Subseção Sci-Fi -->
-                <section id="sci-fi" class="mt-5">
+                <section class="mt-5">
                     <div class="container">
+                        <div id="sci-fi" class="anchor-div"></div>
                         <h2 class="subcategoria-title mb-5">Sci-Fi</h2>
                         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4"> <!-- Ajuste aqui -->
                             <!-- Filme 1 -->
@@ -222,6 +220,7 @@
                 <!-- Subseção Ação -->
                 <section id="acao" class="mt-5">
                     <div class="container">
+                        <div id="acao" class="anchor-div"></div>
                         <h2 class="subcategoria-title mb-5">Ação</h2>
                         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4"> <!-- Ajuste aqui -->
                             <!-- Filme 1 -->
@@ -230,7 +229,11 @@
                                     <img src="./images/bastardos.png" class="card-img-top" alt="Bastardos Inglórios">
                                     <div class="card-body">
                                         <h5 class="card-title">Bastardos Inglórios</h5>
-                                        <p class="card-text">"Bastardos Inglórios" é uma obra audaciosa do diretor Quentin Tarantino, misturando ficção histórica e ação em uma narrativa vibrante durante a Segunda Guerra Mundial. O filme segue a trajetória de um grupo de soldados judeus americanos conhecidos como "The Basterds", liderados pelo tenente Aldo Raine.</p>
+                                        <p class="card-text">"Bastardos Inglórios" é uma obra audaciosa do diretor
+                                            Quentin Tarantino, misturando ficção histórica e ação em uma narrativa
+                                            vibrante durante a Segunda Guerra Mundial. O filme segue a trajetória de um
+                                            grupo de soldados judeus americanos conhecidos como "The Basterds",
+                                            liderados pelo tenente Aldo Raine.</p>
                                         <button type="button" class="btn btn-warning">Assistir</button>
                                     </div>
                                     <div class="card-footer">
@@ -241,10 +244,15 @@
                             <!-- Filme 2 -->
                             <div class="col">
                                 <div class="card h-100 bg-dark">
-                                    <img src="./images/coracoesdeferro.png" class="card-img-top" alt="Corações de Ferro">
+                                    <img src="./images/coracoesdeferro.png" class="card-img-top"
+                                        alt="Corações de Ferro">
                                     <div class="card-body">
                                         <h5 class="card-title">Corações de Ferro</h5>
-                                        <p class="card-text">"Corações de Ferro" é um intenso drama de guerra ambientado durante os últimos meses da Segunda Guerra Mundial na Europa. O filme segue a jornada do sargento Don "Wardaddy" Collier, interpretado por Brad Pitt, e sua tripulação, enquanto eles comandam um tanque Sherman em uma missão mortal atrás das linhas inimigas alemãs.</p>
+                                        <p class="card-text">"Corações de Ferro" é um intenso drama de guerra ambientado
+                                            durante os últimos meses da Segunda Guerra Mundial na Europa. O filme segue
+                                            a jornada do sargento Don "Wardaddy" Collier, interpretado por Brad Pitt, e
+                                            sua tripulação, enquanto eles comandam um tanque Sherman em uma missão
+                                            mortal atrás das linhas inimigas alemãs.</p>
                                         <button type="button" class="btn btn-warning">Assistir</button>
                                     </div>
                                     <div class="card-footer">
@@ -258,7 +266,11 @@
                                     <img src="./images/topgun.png" class="card-img-top" alt="Top Gun Maverick">
                                     <div class="card-body">
                                         <h5 class="card-title">Top Gun Maverick</h5>
-                                        <p class="card-text">"Top Gun Maverick" é a aguardada sequência do icônico filme de 1986, trazendo de volta Tom Cruise no papel do carismático piloto Pete "Maverick" Mitchell. Maverick encontra-se como um dos pilotos de teste mais respeitados da Marinha, quando ele é chamado para treinar um grupo de graduados da Top Gun.</p>
+                                        <p class="card-text">"Top Gun Maverick" é a aguardada sequência do icônico filme
+                                            de 1986, trazendo de volta Tom Cruise no papel do carismático piloto Pete
+                                            "Maverick" Mitchell. Maverick encontra-se como um dos pilotos de teste mais
+                                            respeitados da Marinha, quando ele é chamado para treinar um grupo de
+                                            graduados da Top Gun.</p>
                                         <button type="button" class="btn btn-warning">Assistir</button>
                                     </div>
                                     <div class="card-footer">
@@ -272,6 +284,7 @@
                 <!-- Subseção Terror -->
                 <section id="terror" class="mt-5">
                     <div class="container">
+                        <div id="terror" class="anchor-div"></div>
                         <h2 class="subcategoria-title mb-5">Terror</h2>
                         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4"> <!-- Ajuste aqui -->
                             <!-- Filme 1 -->
@@ -280,7 +293,11 @@
                                     <img src="./images/halloween.png" class="card-img-top" alt="Halloween">
                                     <div class="card-body">
                                         <h5 class="card-title">Halloween</h5>
-                                        <p class="card-text">"Halloween", o filme que definiu o gênero slasher, segue a aterrorizante história de Michael Myers, que, após assassinar sua irmã na noite de Halloween quando tinha apenas seis anos de idade, é internado em uma instituição psiquiátrica. Quinze anos depois, Myers escapa e retorna a Haddonfield, Illinois, com um único objetivo: matar.</p>
+                                        <p class="card-text">"Halloween", o filme que definiu o gênero slasher, segue a
+                                            aterrorizante história de Michael Myers, que, após assassinar sua irmã na
+                                            noite de Halloween quando tinha apenas seis anos de idade, é internado em
+                                            uma instituição psiquiátrica. Quinze anos depois, Myers escapa e retorna a
+                                            Haddonfield, Illinois, com um único objetivo: matar.</p>
                                         <button type="button" class="btn btn-warning">Assistir</button>
                                     </div>
                                     <div class="card-footer">
@@ -294,7 +311,11 @@
                                     <img src="./images/fredvsjason.png" class="card-img-top" alt="Fred vs Jason">
                                     <div class="card-body">
                                         <h5 class="card-title">Fred vs Jason</h5>
-                                        <p class="card-text">"Fred vs. Jason" é o confronto épico entre dois dos mais icônicos vilões do cinema de terror: Freddy Krueger, o assassino dos sonhos de "A Nightmare on Elm Street", e Jason Voorhees, o incansável assassino de "Friday the 13th". Após anos de ser esquecido, Freddy Krueger trama seu retorno manipulando Jason Voorhees para semear o terror e o medo.</p>
+                                        <p class="card-text">"Fred vs. Jason" é o confronto épico entre dois dos mais
+                                            icônicos vilões do cinema de terror: Freddy Krueger, o assassino dos sonhos
+                                            de "A Nightmare on Elm Street", e Jason Voorhees, o incansável assassino de
+                                            "Friday the 13th". Após anos de ser esquecido, Freddy Krueger trama seu
+                                            retorno manipulando Jason Voorhees para semear o terror e o medo.</p>
                                         <button type="button" class="btn btn-warning">Assistir</button>
                                     </div>
                                     <div class="card-footer">
@@ -308,7 +329,11 @@
                                     <img src="./images/jogosmortais.png" class="card-img-top" alt="Jogos Mortais">
                                     <div class="card-body">
                                         <h5 class="card-title">Jogos Mortais</h5>
-                                        <p class="card-text">"Jogos Mortais" é um thriller psicológico que se aprofunda na mente de um assassino conhecido como Jigsaw, que coloca suas vítimas em testes e armadilhas mortais como uma forma distorcida de justiça moral. "Jogos Mortais" é um conto de terror arrepiante sobre sobrevivência, instinto humano e a capacidade de fazer escolhas terríveis sob pressão.</p>
+                                        <p class="card-text">"Jogos Mortais" é um thriller psicológico que se aprofunda
+                                            na mente de um assassino conhecido como Jigsaw, que coloca suas vítimas em
+                                            testes e armadilhas mortais como uma forma distorcida de justiça moral.
+                                            "Jogos Mortais" é um conto de terror arrepiante sobre sobrevivência,
+                                            instinto humano e a capacidade de fazer escolhas terríveis sob pressão.</p>
                                         <button type="button" class="btn btn-warning">Assistir</button>
                                     </div>
                                     <div class="card-footer">
@@ -319,6 +344,49 @@
                         </div>
                     </div>
                 </section>
+        </section>
+        <!-- Seção Perguntas Frequentes -->
+        <section id="perguntas" class="mt-5 text-center">
+            <div class="container">
+                <h1 class="categoria-title">Perguntas Frequentes</h1>
+                <div class="accordion" id="accordionPerguntasFrequentes">
+                    <!-- Pergunta 1 -->
+                    <div class="accordion-item bg-dark mt-5">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button collapsed bg-dark text-ccc custom-accordion-button"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                aria-expanded="true" aria-controls="collapseOne">
+                                Pergunta 1: Como posso acessar o Cinelli Flix?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionPerguntasFrequentes">
+                            <div class="accordion-body text-ccc">
+                                Você pode acessar o Cinelli Flix através de qualquer navegador moderno, digitando o
+                                endereço do nosso site na barra de endereços.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Pergunta 2 -->
+                    <div class="accordion-item bg-dark">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed bg-dark text-ccc custom-accordion-button"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                aria-expanded="false" aria-controls="collapseTwo">
+                                Pergunta 2: É necessário criar uma conta para assistir aos filmes?
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionPerguntasFrequentes">
+                            <div class="accordion-body text-ccc">
+                                Sim, é necessário criar uma conta para ter acesso completo à nossa biblioteca de filmes.
+                                O processo de cadastro é rápido e fácil!
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Adicione mais perguntas conforme necessário -->
+                </div>
+            </div>
         </section>
         <!-- Toast -->
         <div class="toast-container position-fixed bottom-0 end-0 p-3">
@@ -341,8 +409,9 @@
         <script src="script.js"></script>
     </main>
     <footer class="bg-dark text-center mt-5 py-2">
-        <p>&copy; 2024 <a href="https://github.com/RodCinelli" class="github-link" style="text-decoration: underline;">Rodrigo Cinelli</a>. Todos os direitos reservados.</p>
-    </footer>           
+        <p>&copy; 2024 <a href="https://github.com/RodCinelli" class="github-link"
+                style="text-decoration: underline;">Rodrigo Cinelli</a>. Todos os direitos reservados.</p>
+    </footer>
 </body>
 
 </html>
